@@ -135,20 +135,20 @@ $latestVideoID = $result['items'][0]['id'];
               <img src="img/profile1.png" width="200" class="rounded-circle img-thumbnail" alt="">
             </div>
             <div class="col-md-8">
-              <h5>MyCahnel</h5>
-              <p>5000 Folowers.</p>
+              <h5>MyChanel</h5>
+              <p>72 Subscriber.</p>
             </div>
           </div>
           <div class="row mt-3 pb-3">
             <div class="col">
               <div class="ig-thumbnail">
-                <img src="img/thumbs/1.png" alt="">
+                <img src="img/thumbs/reactjs.png" alt="">
               </div>
               <div class="ig-thumbnail">
-                <img src="img/thumbs/2.png" alt="">
+                <img src="img/thumbs/express.png" alt="">
               </div>
               <div class="ig-thumbnail">
-                <img src="img/thumbs/3.png" alt="">
+                <img src="img/thumbs/react-native.png" alt="">
               </div>
             </div>
           </div>
