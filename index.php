@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(0);
+
 function get_Curl($url)
 {
   $curl = curl_init();
@@ -38,8 +40,11 @@ $latestVideoID = $result['items'][0]['id'];
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  
   <!-- My CSS -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -74,9 +79,9 @@ $latestVideoID = $result['items'][0]['id'];
   <div class="jumbotron" id="home">
     <div class="container">
       <div class="text-center">
-        <img src="img/profile1.png" class="rounded-circle img-thumbnail">
-        <h1 class="display-4">Kenny Perulu</h1>
-        <h3 class="lead">Student | Programmer | Freelancer</h3>
+        <img src="img/profil.jpg" class="rounded-circle img-thumbnail">
+        <h1 class="display-4">Kenny A.N Perulu</h1>
+        <h3 class="lead">Programmer | Freelancer</h3>
       </div>
     </div>
   </div>
@@ -92,7 +97,7 @@ $latestVideoID = $result['items'][0]['id'];
       </div>
       <div class="row justify-content-center">
         <div class="col-md-5">
-          <p>Hello, welcome! nice to meet you. web programming is a skill that I have learned since I was in college and although I still have a lot to learn, in recent times I have been working on several projects related to web-based applications for several small companies in my area.</p>
+          <p>Hello, welcome! nice to meet you. web programming is a skill that I have learned since I was in college and although I still have a lot to learn, in recent times I have been working on several projects related to web-based applications for several small companies.</p>
         </div>
         <div class="col-md-5">
           <p>Actually, I will prefer to remote and surelly can work with a team. In programming, I'm still beginner and keep to learn a lot of technology for referrence my skill focus in future. I Hope can build something great in future and for that reason I will work hard to achive my goals.</p>
@@ -141,15 +146,11 @@ $latestVideoID = $result['items'][0]['id'];
           </div>
           <div class="row mt-3 pb-3">
             <div class="col">
-              <div class="ig-thumbnail">
-                <img src="img/thumbs/reactjs.png" alt="">
-              </div>
-              <div class="ig-thumbnail">
-                <img src="img/thumbs/express.png" alt="">
-              </div>
-              <div class="ig-thumbnail">
-                <img src="img/thumbs/react-native.png" alt="">
-              </div>
+              <ul class="list-group">
+                <li class="list-group-item"> <a href="https://web.facebook.com/Kenny.perulu/" class="text-decoration-none" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
+                <li class="list-group-item"><a href="https://twitter.com/K3nny_p3rulu" class="text-decoration-none" target="_blank"> <i class="bi bi-twitter"></i> Twitter</a></li>
+                <li class="list-group-item"><a href="#" class="text-decoration-none" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -189,7 +190,7 @@ $latestVideoID = $result['items'][0]['id'];
           <div class="card">
             <img class="card-img-top" src="img/thumbs/react-native.png" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">My project react-native not yet to publish now because still under development but I promise I to you can build mobile applications with cross-platform technology.</p>
+              <p class="card-text"><a href="https://github.com/KennyWks/android-app-for-thonbers" target="_blank">This repo</a> is my first cross-platfrom application as freelancer and project still under development. may you take look this project to consider my portfolio.</p>
             </div>
           </div>
         </div>
@@ -241,18 +242,16 @@ $latestVideoID = $result['items'][0]['id'];
         <div class="col-lg-4">
           <div class="card bg-primary text-white mb-4 text-center">
             <div class="card-body">
-              <h5 class="card-title">Contact Me</h5>
-              <p class="card-text">My portfolio is interest you? please tell me.</p>
+              <h5 class="card-title">Contact & Location</h5>
+              <p class="card-text">My portfolio is interested you? please tell me.</p>
             </div>
           </div>
 
           <ul class="list-group mb-4">
-            <li class="list-group-item">
-              <h3>Location</h3>
-            </li>
-            <li class="list-group-item">kenny.perulu@gmail.com</li>
-            <li class="list-group-item">Jl. Timor Raya Km 11, Kelurahan Lasiana. Kota Kupang</li>
-            <li class="list-group-item">Nusa Tenggara Timur, Indonesia</li>
+            <li class="list-group-item"><i class="bi bi-envelope"></i> kenny.perulu@gmail.com</li>
+            <li class="list-group-item"><i class="bi bi-telephone"></i> +6281247569523</li>
+            <li class="list-group-item"><a href="https://github.com/KennyWks" class="text-dark text-decoration-none" target="_blanks"><i class="bi bi-github"></i> KennyWks</a></li>
+            <li class="list-group-item"><i class="bi bi-pin-map-fill"></i> Jalan Timor Raya Km 11, Kelurahan Lasiana. Kota Kupang Nusa Tenggara Timur, Indonesia</li>
           </ul>
         </div>
 
@@ -260,7 +259,7 @@ $latestVideoID = $result['items'][0]['id'];
 
           <form>
             <div class="form-group">
-              <label for="nama">Nama</label>
+              <label for="nama">Name</label>
               <input type="text" class="form-control" id="nama">
             </div>
             <div class="form-group">
@@ -291,17 +290,15 @@ $latestVideoID = $result['items'][0]['id'];
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <p>Copyright &copy; 2018.</p>
+          <p>Copyright &copy; <?= date('Y'); ?>.</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
   <script src="https://apis.google.com/js/platform.js"></script>
 </body>
